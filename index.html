@@ -10,13 +10,36 @@
   <div id="main-content">
     <h1>Flatiron Task Lister</h1>
 
-    <form id="create-list-form" action="#" method="post">
-     <label for="new-list-title">Add a new list:</label>
-     <input required type="text" id="new-list-title" name="new-list-title" placeholder="title">
-     <input type="submit" value="Create New List">
-    </form>
+    <div>
+      <form id="create-list-form" action="#" method="post">
+       <label for="new-list-title">Add a new list:</label>
+       <input required type="text" id="new-list-title" name="new-list-title" placeholder="title">
+       <input type="submit" value="Create New List">
+      </form>
+    </div>
 
-    <div id="app-content"></div>
+    <div id="app-content">
+      <form id="create-task-form">
+        <label for="parent-list">Select List:</label>
+        <select id="parent-list">
+          <!-- Major key alert:
+          read the docs for HTML option selected:
+          https://www.w3schools.com/tags/att_option_selected.asp -->
+        <option value="My Dank List" selected>
+          My Dank List
+        </option>
+        </select>
+
+        <label for="new-task-description">Task description:</label>
+        <input required type="text" id="new-task-description" placeholder="description">
+
+        <label for="new-task-priority">Priority level:</label>
+        <input type="text" id="new-task-priority" placeholder="priority">
+        <input type="submit" value="Create New Task">
+      </form>
+      <div id="lists">
+      </div>
+    </div>
 
 
     <script src="src/index.js"></script>

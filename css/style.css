@@ -23,6 +23,7 @@ form, #lists div {
 	border-radius:5px;
 	margin:0 2% 2% 0;
 	box-shadow: 2px 5px 5px #333;
+	width: 80%;
 }
 
 form, #lists div {
@@ -127,4 +128,13 @@ button {
 
 #mocha {
 	background-color: black;
+}
+
+#create-task-form{
+	display: none;
+}
+
+.list-items{
+	display: inline-block;
+	width: 100%;
 }
